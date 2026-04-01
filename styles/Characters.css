@@ -86,7 +86,6 @@ h1 {
     text-shadow: 1px 2px var(--accent-gold);
 }
 
-/* ワイヤーフレームの「横並び」をFlexboxで実現 */
 .character-card {
     display: flex;
     align-items: flex-start;
