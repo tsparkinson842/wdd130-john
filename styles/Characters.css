@@ -1,0 +1,145 @@
+/* --- general --- */
+:root {
+    --primary-color: #000000;    
+    --secondary-color: #800020;  
+    --accent-gold: #b5a642;      
+    --accent-gray: #aaaaaa;      
+    --heading-font: 'Pirata One', system-ui;
+    --body-font: 'Old Standard TT', serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--body-font);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- header --- */
+header {
+    background-color: var(--secondary-color);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 8px 15px;
+    border: 1px solid white;
+}
+
+nav a.active {
+    background-color: var(--accent-gold);
+    color: white;
+    border-left: #b5a642;
+    border-right: #b5a642;
+}
+
+nav a.active:hover {
+    background-color: var(--accent-gold);
+    color: white;
+}
+
+nav a:hover {
+    background-color: var(--accent-gray);
+    color: var(--primary-color);
+}
+
+/* --- body --- */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    text-shadow: 1px 2px var(--accent-gold);
+}
+
+/* ワイヤーフレームの「横並び」をFlexboxで実現 */
+.character-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+    border-right: 1px solid var(--accent-gray);
+    padding-bottom: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--accent-gray);
+    margin-bottom: 0;
+    width: 76%;
+    margin-right: 0;
+}
+
+.image-container img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid var(--accent-gold);
+}
+
+.character-info h2 {
+    font-family: var(--heading-font);
+    color: var(--accent-gold);
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.character-info p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* --- footer --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* --- responsive --- */
+@media (max-width: 600px) {
+    .character-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
