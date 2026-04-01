@@ -4,8 +4,8 @@
     --secondary-color: #800020;  
     --accent-gold: #b5a642;      
     --accent-gray: #aaaaaa;      
-    --heading-font: 'Pirata One', system-ui;
-    --body-font: 'Old Standard TT', serif;
+    --heading-font: 'Pirata One';
+    --body-font: 'Old Standard TT';
 }
 
 body {
@@ -25,11 +25,6 @@ header {
     
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
 .logo {
     display: flex;
@@ -48,7 +43,7 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 8px 15px;
     border: 1px solid white;
 }
@@ -127,9 +122,9 @@ hr {
 /* --- footer --- */
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 5px;
     background-color: var(--secondary-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
